@@ -1,67 +1,64 @@
 body {
-    margin: 0;
-    padding: 0;
+    background-color: black;
+    color: #00FF00; /* Neon green text color */
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000, #222);
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    min-height: 100vh;
 }
 
-.header {
+.container {
     text-align: center;
-    padding: 20px;
-    background: #222;
-    color: #fff;
+    margin-top: 50px;
 }
 
-.header-text {
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gif {
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
+    margin-top: 20px;
+}
+
+.animated-text {
+    background: linear-gradient(90deg, #00FF00, #0000FF, #FF00FF); /* Radium color gradient */
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: -100% 0%;
+    }
+}
+
+.contact-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    background: black;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background: #00FF00;
+    color: black;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #00FF00;
     font-size: 24px;
 }
-
-.video-container {
-    display: flex;
-    justify-content: center;
-}
-
-video {
-    max-width: 100%;
-}
-
-.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #000, #222);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.bot {
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    animation: slideIn 1s ease-in-out;
-}
-
-.button {
-    background: #007BFF; /* Blue color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-    animation: slideInButton 1s ease-in-out;
-}
-
-.button:hover {
-    background: #0056b3; /* Slightly darker blue on hover */
-}
-
-/* The rest of your CSS remains unchanged. */
