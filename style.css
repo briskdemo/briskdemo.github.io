@@ -1,64 +1,36 @@
 body {
-    background-color: black;
-    color: #00FF00; /* Neon green text color */
-    font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
 }
 
-.container {
-    text-align: center;
-    margin-top: 50px;
+header {
+  text-align: center;
+  padding: 50px;
 }
 
-.content {
-    max-width: 600px;
-    margin: 0 auto;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }
 
-.gif {
-    width: 100%;
-    max-width: 600px; /* Adjust the width as needed */
-    margin-top: 20px;
+video {
+  width: 80%;
+  max-width: 800px;
 }
 
-.animated-text {
-    background: linear-gradient(90deg, #00FF00, #0000FF, #FF00FF); /* Radium color gradient */
-    background-size: 200% 200%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: gradient 3s linear infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: -100% 0%;
-    }
+footer {
+  text-align: center;
+  padding: 20px;
 }
 
 .contact-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    color: #00FF00;
-    border: 2px solid #00FF00;
-    background: black;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-}
-
-.contact-button:hover {
-    background: #00FF00;
-    color: black;
-}
-
-.social-media {
-    margin-top: 20px;
-}
-
-.social-media a {
-    margin: 0 10px;
-    color: #00FF00;
-    font-size: 24px;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: black;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
