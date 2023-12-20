@@ -23,8 +23,7 @@ Join the list of satisfied customers who have experienced the Brisk difference. 
 
 Ready to make your space pest-free? Contact us today for a consultation!
 
-![Brisk Pest Control](img/brisk-logo.png)
+![Brisk Pest Control](img/brisklogo.png)
 
 ---
 
-*Follow us on social media for updates: [Twitter](https://twitter.com/briskpest) | [Facebook](https://facebook.com/briskpest) | [Instagram](https://instagram.com/briskpest)*
