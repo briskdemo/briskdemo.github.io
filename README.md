@@ -23,7 +23,18 @@ Join the list of satisfied customers who have experienced the Brisk difference. 
 
 Ready to make your space pest-free? Contact us today for a consultation!
 
-![Brisk Pest Control](img/brisklogo.png)
+<div align="center">
+  <img src="img/brisklogo.png" alt="Brisk Pest Control" width="80%">
+</div>
+
+<style>
+  @media only screen and (max-width: 600px) {
+    img {
+      width: 100%; /* Adjust the percentage as needed for mobile view */
+    }
+  }
+</style>
+
 
 ---
 
