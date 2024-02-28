@@ -244,14 +244,30 @@
 </div>
 <!-- Project End -->
 
-<!-- Sunaif @master -->
+<!-- Your existing HTML with inline styles -->
 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
     <!-- Add an onclick attribute to the existing h3 tag to redirect to "service.html" -->
-    <h3 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block"
-        style="border: 2px solid transparent; border-image: linear-gradient(to right, #ffd700, #ffcc00); border-image-slice: 1; padding: 8px; cursor: pointer; border-radius: 15px;">
+    <h3 id="serviceLink" class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block"
+        style="border: 2px solid transparent; border-image: linear-gradient(to right, #ffd700, #ffcc00); border-image-slice: 1; padding: 8px; cursor: pointer; border-radius: 15px;"
+        onclick="window.location.href='service.html'; this.classList.add('clicked');">
         Other Service
     </h3>
 </div>
+
+<!-- Add the following script at the end of your HTML body or in the head section -->
+<script>
+    document.getElementById('serviceLink').addEventListener('click', function() {
+        this.classList.add('clicked');
+    });
+</script>
+
+<style>
+    /* Add this style to your existing styles or in a style tag in the head section */
+    #serviceLink.clicked {
+        background-color: yellow;
+    }
+</style>
+
 
 
 
