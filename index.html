@@ -248,7 +248,7 @@
 <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
     <!-- Add an onclick attribute to the existing h3 tag to redirect to "service.html" -->
     <h3 id="serviceLink" class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block"
-        style="border: 2px solid transparent; border-image: linear-gradient(to right, #ffd700, #ffcc00); border-image-slice: 1; padding: 8px; cursor: pointer; border-radius: 15px;"
+        style="border: 2px solid transparent; border-image: linear-gradient(to right, #ffd700, #ffcc00); border-image-slice: 1; padding: 8px; cursor: pointer; position: relative; border-radius: 15px;"
         onclick="window.location.href='service.html'; this.classList.add('clicked');">
         Other Service
     </h3>
@@ -266,12 +266,19 @@
     #serviceLink.clicked {
         background-color: yellow;
     }
+
+    #serviceLink::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        left: -2px;
+        border-radius: 16px; /* Adjust the radius to your preference */
+        pointer-events: none;
+        background: linear-gradient(to right, #ffd700, #ffcc00);
+    }
 </style>
-
-
-
-
-
 
 
              <!-- Blog Start -->
