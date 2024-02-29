@@ -279,7 +279,21 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Initialize Owl Carousel with options to disable auto-scrolling
+    $(document).ready(function(){
+        $(".testimonial-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: false, // Set autoplay to false
+            dots: true,
+            nav: false
+        });
+    });
+</script>
 <!-- Testimonial End -->
+
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
