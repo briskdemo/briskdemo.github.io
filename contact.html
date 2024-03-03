@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Brisk Pest Management</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
     <link rel="icon" href="img/brisklogo.png" type="image/png">
 
-    <!-- Google Fonts -->
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your Logo Stylesheet -->
     <style>
         .logo-container {
             background-image: url('img/brisklogo.png');
@@ -27,157 +35,193 @@
             height: 100px;
         }
     </style>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Topbar -->
-<div class="container-fluid topbar-top bg-primary">
-    <div class="container">
-        <div class="d-flex justify-content-between topbar py-2">
-            <div class="d-flex align-items-center flex-shrink-0 topbar-info">
-                <a href="https://maps.app.goo.gl/gbEZzrhJtFrYQVbV8" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>VIEW MAP</a>
-                <a href="tel:+919900102056" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>CALL US</a>
-                <a href="mailto:info.briskpestmanagement@gmail.com" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>MAIL US</a>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary mb-0 display-5" style="font-size: 1rem; @media (max-width: 584px) { font-size: 1.5rem; }">BRISK<span class="text-white">GROUP OF COMPANIES</span><i class=""></i></h1>
+                </a>
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-dark"></span>
+                </button>
+                <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="brisklicence.html" class="nav-item nav-link">Licence</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">About</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Section -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Catch US On Map</h5>
             </div>
-            <div class="text-end pe-4 me-4 border-end border-dark search-btn">
-                <div class="search-form">
-                    <form method="post" action="index.html">
-                        <div class="form-group">
-                            <div class="d-flex">
-                                <input type="search" class="form-control border-0 rounded-pill" name="search-input" value="" placeholder="Search Here" required=""/>
-                                <button type="submit" value="Search Now!" class="btn"><i class="fa fa-search text-dark"></i></button>
-                            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1686306034962!2d77.57283347585637!3d12.896876016510564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15be7dcdf959%3A0x17a0f0cbd87b394b!2sGovindappa%20Layout%2C%20Jaraganahalli!5e0!3m2!1sen!2sin!4v1702966430267!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                    <h5 class="mb-4">Get In Touch</h5>
+                    <form id="contact-form" method="post" action="contact.php">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control rounded-pill" id="name" name="name" placeholder="Name" required="">
                         </div>
+                        <div class="form-group mb-3">
+                            <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="Email" required="">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control rounded-pill" id="subject" name="subject" placeholder="Subject" required="">
+                        </div>
+                        <div class="form-group mb-3">
+                            <textarea class="form-control rounded" id="message" name="message" rows="5" placeholder="Message" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill py-2 px-4">Send Message</button>
                     </form>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-center topbar-icon">
-                <a href="https://www.facebook.com/cssllp?mibextid=LQQJ4d" class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
-                <a href="https://www.instagram.com/briskpestmanagementservices?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="me-4"><i class="fab fa-instagram text-dark"></i></a>
-                <a href="https://www.linkedin.com/in/brisk-pest-management-services-924701103?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class=""><i class="fab fa-linkedin-in text-dark"></i></a>
-            </div>
         </div>
     </div>
-</div>
-<!-- End Topbar -->
+    <!-- End Contact Section -->
 
-<!-- Navbar -->
-<nav class="container-fluid bg-dark">
-    <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="text-primary mb-0 display-5" style="font-size: 1rem; @media (max-width: 584px) { font-size: 1.5rem; }">BRISK<span class="text-white">GROUP OF COMPANIES</span><i class=""></i></h1>
-            </a>
-            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars text-dark"></span>
-            </button>
-            <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="project.html" class="nav-item nav-link">Licence</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay=".3s">
+        <div class="container py-5">
+            <div class="row g-4 footer-inner">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">About brisk</h4>
+                        <p>Brisk Pest Management Service - We are one of India's leading pest control organizations. We organize pest control services throughout India. As a pest control company improving the environment is our business, and we always seek to do it in the most sustainable way. Brisk Pest Management Service has provided Pest Management and Control Service are House Keeping, Catering Services, Utility Services, Garden Maintenance, Pool Maintenance, STP WTP Maintenance, Jet Washing, Bulk Rubbish and Waste Removal, and Man Power Supply.</p>
+                        <p class="mb-0"><a class="" href="#">brisk </a> &copy; 2023 All Right Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">Useful Link</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="btn btn-link ps-0" href="about.html"><i class="fa fa-check me-2"></i>About Us</a>
+                            <a class="btn btn-link ps-0" href="contact.html"><i class="fa fa-check me-2"></i>Contact Us</a>
+                            <a class="btn btn-link ps-0" href="service.html"><i class="fa fa-check me-2"></i>Our Services</a>
+                            <a class="btn btn-link ps-0" href="project.html"><i class="fa fa-check me-2"></i>Licence</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">Services Link</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Rodent Control</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Mosquito Control</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Bed Bug Control</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>WASP control</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Ants Treatment</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Cockroach Control</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Fly Control</a>
+                            <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Honey Bee Removal</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-white fw-bold mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="btn btn-link ps-0" href="tel:+919900102056"><i class="fa fa-check me-2"></i>📞Call Us</a>
+                            <a class="btn btn-link ps-0" href="https://maps.app.goo.gl/gbEZzrhJtFrYQVbV8"><i class="fa fa-check me-2"></i>📍Location</a>
+                            <a class="btn btn-link ps-0" href="mailto:info.briskpestmanagement@gmail.com"><i class="fa fa-check me-2"></i>📧Mail Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </div>
-</nav>
-<!-- End Navbar -->
-
-<!-- Page Header -->
-<div class="container-fluid page-header py-5">
-    <div class="container text-center py-5">
-        <h1 class="display-2 text-white mb-4 animated slideInDown">Contact</h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item text-white" aria-current="page">Contact</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-<!-- End Page Header -->
-
-<!-- Contact Section -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-            <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Catch US On Map</h5>
         </div>
-        <div class="row g-5 mb-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="h-100">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1686306034962!2d77.57283347585637!3d12.896876016510564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15be7dcdf959%3A0x17a0f0cbd87b394b!2sGovindappa%20Layout%2C%20Jaraganahalli!5e0!3m2!1sen!2sin!4v1702966430267!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4" style="background-color: rgba(0, 0, 0, 0);"> <!-- Set background color to transparent black -->
+        <div class="container-xl"> <!-- Changed to container-xl for extra-large width -->
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h1 class="text-primary mb-0 display-5" style="font-size: 1.2rem;">BRISK<span class="text-white">GROUP OF COMPANIES</span></h1> <!-- Adjusted font-size -->
+                </div>
+                <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
+                    <a href="https://www.facebook.com/cssllp?mibextid=LQQJ4d" class="me-2 me-md-4"><i class="fab fa-facebook-f text-white"></i>facebook</a>
+                    <a href="https://www.instagram.com/briskpestmanagementservices?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="me-2 me-md-4"><i class="fab fa-instagram text-white"></i>instagram</a>
+                    <a href="https://www.linkedin.com/in/brisk-pest-management-services-924701103?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class=""><i class="fab fa-linkedin-in text-white"></i>linkedin</a>
+                </div>
+                <div class="col-md-4 my-auto text-center text-md-end text-white">
+                    <p class="mb-0" style="font-size: 0.9rem;">Designed By <a class="border-bottom" href="https://instagram.com/sunaif_adkar">sunaif adkar</a></p> <!-- Adjusted font-size -->
                 </div>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
-                <h5 class="mb-4">Get In Touch</h5>
-                <form id="contact-form" method="post" action="contact.php">
-                    <div class="form-group mb-3">
-                        <input type="text" class="form-control rounded-pill" id="name" name="name" placeholder="Name" required="">
-                    </div>
-                    <div class="form-group mb-3">
-                        <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="Email" required="">
-                    </div>
-                    <div class="form-group mb-3">
-                        <input type="text" class="form-control rounded-pill" id="subject" name="subject" placeholder="Subject" required="">
-                    </div>
-                    <div class="form-group mb-3">
-                        <textarea class="form-control rounded" id="message" name="message" rows="5" placeholder="Message" required=""></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary rounded-pill py-2 px-4">Send Message</button>
-                </form>
-            </div>
         </div>
     </div>
-</div>
-<!-- End Contact Section -->
+    <!-- Copyright End -->
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>&copy; 2024 Brisk Pest Management. All rights reserved.</p>
-            </div>
-            <div class="col-md-6">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- End Footer -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-<!-- Back to Top Button -->
-<a href="#" class="btn btn-primary back-to-top"><i class="fas fa-arrow-up"></i></a>
-<!-- End Back to Top Button -->
-
-<!-- jQuery, Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Font Awesome JS -->
-<script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
-<!-- Custom Script -->
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.back-to-top').fadeIn();
-            } else {
-                $('.back-to-top').fadeOut();
-            }
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+            $('.back-to-top').click(function () {
+                $('html, body').animate({scrollTop: 0}, 800);
+                return false;
+            });
         });
-        $('.back-to-top').click(function () {
-            $('html, body').animate({scrollTop: 0}, 800);
-            return false;
-        });
-    });
-</script>
+    </script>
 </body>
+
 </html>
